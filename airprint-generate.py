@@ -232,6 +232,8 @@ class AirPrintGenerate(object):
                 
                 if self.verbose:
                     sys.stderr.write('Created: %s%s' % (fname, os.linesep))
+            else:
+		print "Unshared printer: ",p
 
 if __name__ == '__main__':
     parser = optparse.OptionParser()
